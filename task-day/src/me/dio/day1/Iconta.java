@@ -7,5 +7,7 @@ public interface Iconta {
 
     void transferir(double valor, Iconta contaDestino);
 
+    void saldo(double valor, Iconta contaCorrente);
+
     void imprimirInforsExtrato();
 }

@@ -12,12 +12,21 @@ public class ContaCorrente extends Conta {
     }
 
     @Override
+    public void saldo(double valor, Iconta contaCorrente) {
+
+    }
+
+    @Override
     public void imprimirInforsExtrato() {
 
     }
 
     @Override
     public void getSaldo(double saldo, Conta contaCorrente) {
+
+    }
+
+    public void saldo(double saldo, Conta contaCorrente) {
 
     }
 }

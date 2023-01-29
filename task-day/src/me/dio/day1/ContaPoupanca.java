@@ -1,11 +1,12 @@
 package me.dio.day1;
 
+@Contract(pure = true)
 public class ContaPoupanca {
-    public ContaPoupanca(Cliente cliente) {
+    public ContaPoupanca(String New) {
         super();
     }
 
-    public ContaPoupanca(String aNew) {
+    public void saldo(double valor){
         return;
     }
 

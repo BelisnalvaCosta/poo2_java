@@ -3,20 +3,26 @@ package me.dio.day1;
 import java.util.Scanner;
 
 public class MainBank  {
-
-    private static Conta ContaCorrente;
-    private static Iconta ContaPoupanca;
-    private static Object Cliente;
-
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        Cliente eliezer = new Cliente("Eliezer");
-        eliezer.setNome("Eliezer");
+        Cliente paulaSilva = new Cliente("Paula Silva");
+        paulaSilva.setNome("Paula Silva");
 
-        Conta cc = new ContaCorrente(eliezer);
-        ContaPoupanca contaPoupanca = new ContaPoupanca(" ");
+        Conta cc = new ContaCorrente(paulaSilva);
+        Conta poupanca = new Conta() {
+            @Override
+            public void saldo(double valor, Iconta contaCorrente) {
+
+            }
+
+            @Override
+            public void getSaldo(double saldo, Conta contaCorrente) {
+            }
+        };
+
+        System.out.println("Cliente: ");
 
         System.out.print("Qual o valor de depósito? ");
         double deposito = sc.nextDouble();
@@ -24,14 +30,15 @@ public class MainBank  {
 
         System.out.print("Qual valor deseja transferir para a poupança? ");
         double transferir = sc.nextDouble();
-        cc.transferir(transferir, ContaPoupanca);
+        cc.transferir(transferir, poupanca);
         System.out.println();
 
+        System.out.print("Saldo atual: ");
         double saldo = sc.nextDouble();
-        cc.getSaldo(saldo, ContaCorrente);
+        cc.saldo(saldo);
         System.out.println();
 
         cc.imprimirInforsExtrato();
-        contaPoupanca.imprimirInforsExtrato();
+        poupanca.imprimirInforsExtrato();
     }
 }
