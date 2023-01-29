@@ -1,2 +1,4 @@
-package me.dio.day1;public class count {
+package me.dio.day1;
+
+public class count {
 }
