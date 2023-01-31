@@ -19,9 +19,9 @@ public class MainBank  {
 
             @Override
             public void getSaldo(double saldo, Conta contaCorrente) {
+                saldo(saldo);
             }
         };
-
         System.out.println("Cliente: ");
 
         System.out.print("Qual o valor de depósito? ");
@@ -40,5 +40,15 @@ public class MainBank  {
 
         cc.imprimirInforsExtrato();
         poupanca.imprimirInforsExtrato();
+        ContaCorrente contaCorrenteSaldo;
+        cc.imprimirInforsExtrato();
     }
+
+        public void saldo(double valor, Iconta contaCorrente) {
+
+    }
+
+        public void getSaldo(double saldo, Conta contaCorrente) {
+    }
+
 }

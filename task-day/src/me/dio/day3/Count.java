@@ -1,8 +1,8 @@
-package day3.Bank;
+package me.dio.day3;
 
 import java.math.BigDecimal;
 
-public class count {
+public class Count {
     //Atributes
 
     private int number;
