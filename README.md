@@ -1,14 +1,15 @@
 # poo2_java
 
-Exemplos de projetos com códigos básicos na linguagem java[acessar](POO)[^1]
+Exemplos de projetos com códigos básicos na linguagem java POO[^1]
 
 Este projeto foi feito na IDE IntelliJ, na linguagem Java, com a orientação da Expert Camila Cavalcante, com
 objetivo de nos orientar a explorar o código com Programaçao Orientada a Objeto.
 
-Mentoria POO[acessar](https://web.dio.me/lives/dominando-programacao-orientada-a-objetos-com-java-1)
-Praticando POO em Java[acessar Curso](https://web.dio.me/course/praticando-orientacao-a-objetos-com-java/learning/bd32419b-9081-4426-ad13-e6d380e93443)
+Mentoria POO [acessar](https://web.dio.me/lives/dominando-programacao-orientada-a-objetos-com-java-1)
+Praticando POO em Java [acessar Curso](https://web.dio.me/course/praticando-orientacao-a-objetos-com-java/learning/bd32419b-9081-4426-ad13-e6d380e93443)
 
-### _*Day1 - Main*_ 
+### Day1 - Main 
+
 - 'O primeiro dia': Passo a passo da movimentação Bancária do Cliente
 
 1 - Bank
