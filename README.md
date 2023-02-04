@@ -30,7 +30,7 @@ Praticando POO em Java - [acessar Curso](https://web.dio.me/course/praticando-or
 7 - MainBank
 
 ### Day2
-- 'Segundo dia' : Calculadora com seus operadores e um código de Nota: 0 a 150 para medir o QI
+- ' Segundo dia ': Calculadora com seus operadores e um código de Nota: 0 a 150 para medir o QI
 
 1 - Calculator
 
