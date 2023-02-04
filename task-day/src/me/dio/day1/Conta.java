@@ -36,11 +36,6 @@ public abstract class Conta implements Iconta {
         contaDestino.depositar(valor);
     }
 
-    public void saldo(double valor) {
-        this.saldo(valor);
-        saldo -= valor;
-    }
-
     public int getAgencia() {
         return agencia;
     }
@@ -61,5 +56,4 @@ public abstract class Conta implements Iconta {
         System.out.println(String.format("Saldo: %.2f", this.saldo));
     }
 
-    public abstract void getSaldo(double saldo, Conta contaCorrente);
 }

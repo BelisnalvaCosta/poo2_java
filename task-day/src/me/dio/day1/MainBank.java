@@ -7,21 +7,11 @@ public class MainBank  {
 
         Scanner sc = new Scanner(System.in);
 
-        Cliente paulaSilva = new Cliente("Paula Silva");
+        Cliente paulaSilva = new Cliente();
         paulaSilva.setNome("Paula Silva");
 
         Conta cc = new ContaCorrente(paulaSilva);
-        Conta poupanca = new Conta() {
-            @Override
-            public void saldo(double valor, Iconta contaCorrente) {
-
-            }
-
-            @Override
-            public void getSaldo(double saldo, Conta contaCorrente) {
-                saldo(saldo);
-            }
-        };
+        Conta poupanca = new ContaPoupanca(paulaSilva);
         System.out.println("Cliente: ");
 
         System.out.print("Qual o valor de depósito? ");
@@ -33,22 +23,9 @@ public class MainBank  {
         cc.transferir(transferir, poupanca);
         System.out.println();
 
-        System.out.print("Saldo atual: ");
-        double saldo = sc.nextDouble();
-        cc.saldo(saldo);
-        System.out.println();
-
-        cc.imprimirInforsExtrato();
+        cc.imprimirExtrato();
         poupanca.imprimirInforsExtrato();
-        ContaCorrente contaCorrenteSaldo;
-        cc.imprimirInforsExtrato();
     }
-
-        public void saldo(double valor, Iconta contaCorrente) {
-
+        protected void ImprimirInfosComum() {
     }
-
-        public void getSaldo(double saldo, Conta contaCorrente) {
-    }
-
 }

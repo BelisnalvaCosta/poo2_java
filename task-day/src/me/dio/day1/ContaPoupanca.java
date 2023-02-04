@@ -1,16 +1,15 @@
 package me.dio.day1;
 
 @Contract(pure = true)
-public class ContaPoupanca {
-    public ContaPoupanca(String New) {
-        super();
+public class ContaPoupanca extends Conta {
+
+    public ContaPoupanca(Cliente cliente) {
+        super(cliente);
     }
 
-    public void saldo(double valor){
-        return;
-    }
-
-    public void imprimirInforsExtrato() {
-        System.out.println("=== Extrato Conta Poupança ===");
+    @Override
+    public void imprimirExtrato() {
+        System.out.println("***** Extrato Conta Poupança *****");
+        System.out.println();
     }
 }

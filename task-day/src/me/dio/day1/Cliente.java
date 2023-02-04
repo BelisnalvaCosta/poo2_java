@@ -3,7 +3,7 @@ package me.dio.day1;
 public class Cliente {
     private String nome;
 
-    public Cliente(String nome) {
+    public Cliente() {
         this.nome = nome;
     }
 
